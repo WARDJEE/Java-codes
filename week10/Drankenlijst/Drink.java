@@ -1,6 +1,6 @@
 package week10.Drankenlijst;
 
-public class Drink {
+public class Drink implements Comparable<Drink>{
     private String name;
     private double price;
     private boolean isAlcoholic;
@@ -37,5 +37,15 @@ public class Drink {
 
     public String toString() {
         return this.name + " €" + this.price;
+    }
+
+    // Drankenlijst sorteren
+    public int compareTo(Drink drink) {
+        int alcoholCompare = Boolean.compare(drink.isAlcoholic(), this.isAlcoholic());
+        if (alcoholCompare != 0) {
+            return alcoholCompare;
+        }
+
+        return Double.compare(this.price, drink.getPrice());
     }
 }

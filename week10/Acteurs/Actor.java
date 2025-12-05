@@ -1,5 +1,6 @@
 package week10.Acteurs;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Actor implements Comparable <Actor> {
@@ -32,11 +33,15 @@ public class Actor implements Comparable <Actor> {
 
     @Override
     public String toString() {
-        return this.name + " " + this.birthYear;
+        return this.birthYear + " " +this.name;
     }
 
     @Override
-    public int compareTo(Actor o) {
-        return 0;
+    public int compareTo(Actor actor) {
+        int datum = this.birthYear - actor.getBirthYear();
+        if (datum != 0) {
+            return datum;
+        }
+        return this.name.compareTo(actor.getName());
     }
 }

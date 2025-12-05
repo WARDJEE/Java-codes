@@ -1,10 +1,6 @@
 package week10.Acteurs;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
+import java.util.*;
 
 public class TestActor {
     private static final Actor[] testdata = {
@@ -27,7 +23,7 @@ public class TestActor {
             new Actor("Anna Faris", 1976)
     };
 
-    public static void main(String[] args) {
+    static void main() {
         Actor reese = new Actor("Reese Witherspoon", 1976);
         Actor drew = new Actor("Drew Barrymore", 1975);
         Actor anna = new Actor("Anna Faris", 1976);
@@ -41,8 +37,8 @@ public class TestActor {
         actors.add(thandie);
 
         // Toon de inhoud van de collection (zonder iterator)
-        for (Actor actor : testdata) {
-            System.out.println(actor.toString());
+        for (Actor actor : actors) {
+            System.out.println(actor);
         }
 
         // Verwijder de objecten reese en thandie
@@ -55,17 +51,30 @@ public class TestActor {
             if (it.next().getBirthYear() == 1975) {
                 it.remove();
             }
-
-            // Verwijder alle dubbele acteurs in de lijst (doe dit bijvoorbeeld door een
-            // nieuwe lijst te maken zonder dubbels.  Je kan “contains” gebruiken om te
-            // kijken of een element al in de lijst zit)
-            ArrayList<Actor> zonderDubbels = new ArrayList<>();
-            
-
-            // Sorteer volgens geboortejaar (oudste eerst) en dan volgens voornaam
-
-            System.out.println("\n Uiteindelijke inhoud:\n");
-            // Toon de inhoud van de collection (met iterator of foreach)
         }
+        // Verwijder alle dubbele acteurs in de lijst (doe dit bijvoorbeeld door een
+        // nieuwe lijst te maken zonder dubbels.  Je kan “contains” gebruiken om te
+        // kijken of een element al in de lijst zit)
+        ArrayList<Actor> zonderDubbels = new ArrayList<>();
+        for (Actor actor : actors) {
+            if (!zonderDubbels.contains(actor)){
+                zonderDubbels.add(actor);
+            }
+        }
+
+
+        // Sorteer volgens geboortejaar (oudste eerst) en dan volgens voornaam
+        Collections.sort(zonderDubbels);
+
+
+        System.out.println("\nUiteindelijke inhoud:\n");
+        // Toon de inhoud van de collection (met iterator of foreach)
+        for (Actor zonderDubbel : zonderDubbels) {
+            System.out.println(zonderDubbel);
+        }
+
+
+
+
     }
 }
