@@ -20,6 +20,5 @@ public class Table extends Entity implements Visible, Movable{
         super.position[0] += position[0];
         super.position[1] += position[1];
         super.position[2] += position[2];
-
     }
 }
