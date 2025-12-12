@@ -1,4 +1,4 @@
-package Peertutoring.Week2;
+package Peertutoring.Week02;
 import java.util.Scanner;
 public class Aankoop {
     static void BTW(double prijs) {

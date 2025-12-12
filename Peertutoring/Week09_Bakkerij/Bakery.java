@@ -1,4 +1,4 @@
-package Peertutoring.Week9_Bakkerij;
+package Peertutoring.Week09_Bakkerij;
 
 public class Bakery {
     private Product[] products;

@@ -1,10 +1,21 @@
-package Peertutoring.Week6_Galgje;
+package Peertutoring.Week06_Galgje;
 
 import java.util.Scanner;
 
-public class Galgje2 {
+public class Galgje3 {
+    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        final String HANGMAN =
+                        "----- \n" +
+                        "| | \n" +
+                        "| O \n" +
+                        "| /|\\\n" +
+                        "| | \n" +
+                        "| / \\\n" +
+                        "| \n" +
+                        "-------";
 
         String woord;
         int lengte;
@@ -48,3 +59,4 @@ public class Galgje2 {
         System.out.println("Proficiat, je hebt het woord geraden in "+ kansen + "beurten!");
     }
 }
+

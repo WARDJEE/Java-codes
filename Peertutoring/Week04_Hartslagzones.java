@@ -1,7 +1,7 @@
 package Peertutoring;
 import java.util.Scanner;
 
-public class Week4_Hartslagzones {
+public class Week04_Hartslagzones {
     // Deel 1
     public static void aftellen() {
         System.out.println("Start");

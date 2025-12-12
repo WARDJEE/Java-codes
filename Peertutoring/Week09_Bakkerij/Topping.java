@@ -1,4 +1,4 @@
-package Peertutoring.Week9_Bakkerij;
+package Peertutoring.Week09_Bakkerij;
 
 public enum Topping {
     CHOCOLATE, CINNAMON, ALMOND, PLAIN;

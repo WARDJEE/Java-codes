@@ -1,4 +1,4 @@
-package Peertutoring.Week7_Golven;
+package Peertutoring.Week07_Golven;
 
 public class Golf {
     private double amplitude, frequentie, fase;

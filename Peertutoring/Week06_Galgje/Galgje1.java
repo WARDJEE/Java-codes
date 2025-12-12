@@ -1,4 +1,4 @@
-package Peertutoring.Week6_Galgje;
+package Peertutoring.Week06_Galgje;
 
 import java.util.Scanner;
 
