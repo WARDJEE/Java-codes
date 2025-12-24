@@ -7,7 +7,7 @@ public class MusicLibrary {
     // private ... library;
     private Set<Song> library;
     // private ... artistMap;
-    private Map<String, List<Song>> artistMap;
+    private Map<String, Set<Song>> artistMap;
 
     public MusicLibrary() {
         // TODO: Initialize your collections
@@ -19,7 +19,7 @@ public class MusicLibrary {
         // TODO: Add to library (prevent duplicates)
         this.library.add(s);
         // TODO: Add to artist map
-        this.artistMap.put(s.getArtist(), getSongsByArtist(s.getArtist()));
+        this.artistMap.put(s.getArtist(), new HashSet<>(getSongsByArtist(s.getArtist())));
     }
 
     public List<Song> getSongsByArtist(String artist) {

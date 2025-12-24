@@ -1,7 +1,7 @@
 package projects;
 import java.util.Scanner;
 import java.util.Random;
-public class Higher_lower {
+public class HigherLower {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
