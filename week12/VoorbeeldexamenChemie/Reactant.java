@@ -1,4 +1,4 @@
-package week12.Voorbeeldexamen;
+package week12.VoorbeeldexamenChemie;
 
 public interface Reactant {
     boolean isLeeg();

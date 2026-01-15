@@ -1,4 +1,4 @@
-package week12.Voorbeeldexamen;
+package week12.VoorbeeldexamenChemie;
 
 public class Metaal extends Atoom {
     private double geleiding = 1;

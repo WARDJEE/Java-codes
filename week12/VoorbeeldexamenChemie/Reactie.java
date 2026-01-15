@@ -1,9 +1,7 @@
-package week12.Voorbeeldexamen;
+package week12.VoorbeeldexamenChemie;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 
 public class Reactie {
     private String beschrijving;

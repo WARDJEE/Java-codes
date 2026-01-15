@@ -1,4 +1,4 @@
-package week12.Voorbeeldexamen;
+package week12.VoorbeeldexamenChemie;
 
 public class NietMetaal extends Atoom {
     private boolean isolerend = true;
